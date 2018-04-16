@@ -1,0 +1,25 @@
+{
+  "name": "hack-ig",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "watch": "nodemon ./bin/www",
+    "make-css": "node-sass src/scss -o public/css --output-style expanded --sourcemap",
+    "watch-css": "node-sass -w src/scss -o public/css --output-style expanded --sourcemap"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "express-hbs": "^1.0.4",
+    "hbs": "~4.0.1",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "uikit": "^3.0.0-beta.42"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
