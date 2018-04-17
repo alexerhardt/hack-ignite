@@ -33,7 +33,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-// These can then be included as-is
 app.use('/js', express.static(__dirname + '/node_modules/uikit/dist/js'));
 
 app.use('/', index);
