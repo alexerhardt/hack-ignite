@@ -3,12 +3,22 @@
         <a href="/" class="uk-navbar-item uk-logo">Hack Ignite</a>
     </div>
     <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
+        <ul class="uk-navbar-nav uk-visible@m">
             <li class="uk-active"><a href="">Projects</a></li>
             <li class="uk-active"><a href="">Blog</a></li>
         </ul>
         <div class="uk-navbar-item">
             <a class="uk-button uk-button-default" href="">Sign Up</a>
+        </div>
+        <a uk-navbar-toggle-icon href="#offcanvas" uk-toggle class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon"></a>
+        <div id="offcanvas" uk-offcanvas="flip: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <li class="uk-active"><a href="">Projects</a></li>
+                    <li class="uk-active"><a href="">Blog</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
