@@ -1,0 +1,5 @@
+// Need to find how to reference the 80px from source
+// 240: 80px * 2 from nav * 40px * 2 from section small
+.hero {
+    height: calc(100vh - 240px);
+}
