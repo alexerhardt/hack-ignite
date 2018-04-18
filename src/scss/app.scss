@@ -8,5 +8,11 @@
 // 3. Your custom mixin overwrites.
 @mixin hook-card() { color: #000; }
 
+@mixin hook-flex-misc() {
+    @media (min-width: $breakpoint-small) {
+        .uk-flex\@s { display: flex; }
+    }
+}
+
 // 4. Import UIkit.
 @import "../../node_modules/uikit/src/scss/uikit-theme.scss";
