@@ -1,5 +1,6 @@
 // 1. Your custom variables and variable overwrites.
 @import "_home.scss";
+$padding-section: 40px;
 
 // 2. Import default variables and available mixins.
 @import "../../node_modules/uikit/src/scss/variables-theme.scss";
@@ -11,6 +12,13 @@
 @mixin hook-flex-misc() {
     @media (min-width: $breakpoint-small) {
         .uk-flex\@s { display: flex; }
+    }
+}
+
+@mixin hook-padding-misc() {
+    .section-padding {
+        padding-top: $padding-section;
+        padding-bottom: $padding-section;
     }
 }
 

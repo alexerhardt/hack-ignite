@@ -9546,6 +9546,11 @@ iframe.uk-cover {
   padding-right: 0 !important;
 }
 
+.section-padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 /* ========================================================================
    Component: Position
  ========================================================================== */
