@@ -1,6 +1,7 @@
 // 1. Your custom variables and variable overwrites.
 @import "_home.scss";
 // heights in pixels are consistent with the library
+$nav-height: 80px;
 $padding-section: 40px;
 $footer-height: $padding-section * 3;
 
@@ -22,6 +23,10 @@ $footer-height: $padding-section * 3;
         padding-top: $padding-section;
         padding-bottom: $padding-section;
     }
+}
+
+.vspan {
+    height: calc(100vh - #{$nav-height} - #{$footer-height});
 }
 
 footer {

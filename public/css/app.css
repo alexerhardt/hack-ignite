@@ -3,6 +3,10 @@
   height: calc(100vh - 240px);
 }
 
+.vspan {
+  height: calc(100vh - 80px - 120px);
+}
+
 footer {
   height: 120px;
 }
