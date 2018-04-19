@@ -1,6 +1,8 @@
 // 1. Your custom variables and variable overwrites.
 @import "_home.scss";
+// heights in pixels are consistent with the library
 $padding-section: 40px;
+$footer-height: $padding-section * 3;
 
 // 2. Import default variables and available mixins.
 @import "../../node_modules/uikit/src/scss/variables-theme.scss";
@@ -20,6 +22,10 @@ $padding-section: 40px;
         padding-top: $padding-section;
         padding-bottom: $padding-section;
     }
+}
+
+footer {
+    height: $footer-height;
 }
 
 // 4. Import UIkit.
