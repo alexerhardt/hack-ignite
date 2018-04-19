@@ -3,6 +3,19 @@
   height: calc(100vh - 240px);
 }
 
+::placeholder {
+  color: black;
+}
+
+.uk-input, .uk-select {
+  color: #666 !important;
+  background-color: #f8f8f8 !important;
+}
+
+::-webkit-input-placeholder, ::placeholder {
+  color: #666 !important;
+}
+
 .vspan {
   height: calc(100vh - 80px - 120px);
 }

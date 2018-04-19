@@ -5,6 +5,10 @@ $nav-height: 80px;
 $padding-section: 40px;
 $footer-height: $padding-section * 3;
 
+::placeholder {
+    color: black;
+}
+
 // 2. Import default variables and available mixins.
 @import "../../node_modules/uikit/src/scss/variables-theme.scss";
 @import "../../node_modules/uikit/src/scss/mixins-theme.scss";
@@ -24,6 +28,16 @@ $footer-height: $padding-section * 3;
         padding-bottom: $padding-section;
     }
 }
+
+.uk-input, .uk-select {
+    color: $global-color !important;
+    background-color: $global-muted-background !important;
+}
+
+::-webkit-input-placeholder, ::placeholder {
+    color: $global-color !important;
+}
+
 
 .vspan {
     height: calc(100vh - #{$nav-height} - #{$footer-height});
