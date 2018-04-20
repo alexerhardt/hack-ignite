@@ -47,5 +47,18 @@ footer {
     height: $footer-height;
 }
 
+.icon-cont {
+    font-size: 4em;
+    color: $global-primary-background;
+}
+
+@media (min-width: $breakpoint-small) {
+    .icon-cont { font-size: 5em; }
+}
+
+@media (min-width: $breakpoint-medium) {
+    .icon-cont { font-size: 6em; }
+}
+
 // 4. Import UIkit.
 @import "../../node_modules/uikit/src/scss/uikit-theme.scss";
