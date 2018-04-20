@@ -5,17 +5,17 @@ $nav-height: 80px;
 $padding-section: 40px;
 $footer-height: $padding-section * 3;
 
-::placeholder {
-    color: black;
-}
+$global-primary-background: #FF5722;
+$global-secondary-background: #2196F3;
+$global-tertiary-background: #222;
+$global-link-color: $global-primary-background;
+
 
 // 2. Import default variables and available mixins.
 @import "../../node_modules/uikit/src/scss/variables-theme.scss";
 @import "../../node_modules/uikit/src/scss/mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
-@mixin hook-card() { color: #000; }
-
 @mixin hook-flex-misc() {
     @media (min-width: $breakpoint-small) {
         .uk-flex\@s { display: flex; }
@@ -25,8 +25,14 @@ $footer-height: $padding-section * 3;
 @mixin hook-padding-misc() {
     .section-padding {
         padding-top: $padding-section;
-        padding-bottom: $padding-section;
+        padding-bottom: 1.5 * $padding-section;
     }
+}
+
+nav {
+    .uk-logo, 
+    .uk-navbar-nav > li.uk-active > a 
+    { color: $global-primary-background !important };
 }
 
 .uk-input, .uk-select {
@@ -38,7 +44,9 @@ $footer-height: $padding-section * 3;
     color: $global-color !important;
 }
 
-
+.select-icon-override {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A") !important;
+}
 .vspan {
     height: calc(100vh - #{$nav-height} - #{$footer-height});
 }
@@ -50,6 +58,10 @@ footer {
 .icon-cont {
     font-size: 4em;
     color: $global-primary-background;
+}
+
+.background-tertiary {
+    background-color: $global-tertiary-background;
 }
 
 @media (min-width: $breakpoint-small) {
