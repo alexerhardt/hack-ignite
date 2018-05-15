@@ -1,6 +1,11 @@
 @charset "UTF-8";
+/**
+ * Custom styles
+ */
 .hero {
   height: calc(100vh - 240px);
+  background-color: #FF7043 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-carbon.png") !important;
 }
 
 nav .uk-logo,
@@ -34,10 +39,6 @@ footer {
   color: #FF7043;
 }
 
-.background-tertiary {
-  background-color: #222;
-}
-
 @media (min-width: 640px) {
   .icon-cont {
     font-size: 5em;
@@ -48,6 +49,10 @@ footer {
   .icon-cont {
     font-size: 6em;
   }
+}
+
+.background-tertiary {
+  background-color: #222;
 }
 
 /* ========================================================================

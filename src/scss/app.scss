@@ -36,8 +36,13 @@ $global-link-color: $global-primary-background;
 }
 
 // Span the hero vertically
-.hero { height: calc(100vh - $nav-height - $padding-section * 2); }
-
+.hero { 
+    height: calc(100vh - #{$nav-height + $padding-section * 4}); 
+    background-color: $global-primary-background !important;
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-carbon.png") !important;
+}
+    
+    
 // Change link colors in navbar
 nav {
     .uk-logo, 
